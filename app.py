@@ -8,17 +8,17 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 # load tokenizer and model once
 @st.cache_resource # cache the data
 def load_model():
-    # define the base directory where your app.py is located
-    base_dir = os.path.dirname(__file__)
+    # # define the base directory where your app.py is located
+    # base_dir = os.path.dirname(__file__)
 
-    # define the paths to your local model and tokenizer folders relative to base_dir
-    model_path = os.path.join(base_dir, "distilbert_finetuned_imdb")
-    tokenizer_path = os.path.join(base_dir, "distilbert_finetuned_tokenizer_imdb")
-    
+    # # define the paths to your local model and tokenizer folders relative to base_dir
+    # model_path = os.path.join(base_dir, "distilbert_finetuned_imdb")
+    # tokenizer_path = os.path.join(base_dir, "distilbert_finetuned_tokenizer_imdb")
+    model_name = "DeepAxion/distilbert-imdb-sentiment"
     # load the tokenizer from its correct folder
-    tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
     # load the model from its correct folder
-    model = AutoModelForSequenceClassification.from_pretrained(model_path)
+    model = AutoModelForSequenceClassification.from_pretrained(model_name)
     
     # put the model in eval mode
     model.eval()
