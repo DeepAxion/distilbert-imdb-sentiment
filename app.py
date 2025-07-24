@@ -84,7 +84,7 @@ if st.button("🔍 Analyze", use_container_width=True):
             color = "#66CDAA" if pred == 1 else "#ff6b6b"
 
             st.markdown(f"<h2 style='color:{color}; text-align:center;'>Your mood is: {sentiment}</h2>", unsafe_allow_html=True)
-            st.markdown(f"<p style='text-align:center;'>Confidence: <strong>{confidence:.2f}</strong></p>", unsafe_allow_html=True)
+            st.markdown(f"<p style='text-align:center;'>Confidence: <strong>{confidence*100:.2f}%</strong></p>", unsafe_allow_html=True)
 
             # plot confidence bar
             fig, ax = plt.subplots()
