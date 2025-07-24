@@ -38,7 +38,7 @@ st.markdown("""
 
 # input box label with a custom class
 st.markdown(
-    '<p class="input-label-gap" style="font-size: 24px; font-weight: bold;"> Type in the box and click Analyze to see the emotion behind the text: </p>',
+    '<p class="input-label-gap" style="font-size: 24px; font-weight: bold;"> Type in the box and see the emotion behind the text: </p>',
     unsafe_allow_html=True
 )
 
