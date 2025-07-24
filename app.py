@@ -32,13 +32,13 @@ st.set_page_config(page_title="Sentiment Analyzer", page_icon="🎭", layout="ce
 
 st.markdown("""
     <h1 style='text-align: center; color: #6c63ff;'>🎭 Your Mood Analyzer 🎭 </h1>
-    <p style='text-align: center;'>Get real-time sentiment and confidence scores for your text!</p>
+    <p style='text-align: center;'>Get real-time sentiment for your text!</p>
 """, unsafe_allow_html=True)
 
 
 # input box label with a custom class
 st.markdown(
-    '<p class="input-label-gap" style="font-size: 24px; font-weight: bold;">👨‍🍼 Let\' see how yah feeling:</p>',
+    '<p class="input-label-gap" style="font-size: 24px; font-weight: bold;">🤖 Type in the box and click Analyze to check your mood: </p>',
     unsafe_allow_html=True
 )
 
