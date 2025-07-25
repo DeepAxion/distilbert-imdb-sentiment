@@ -76,7 +76,8 @@ streamlit run app.py
 
 Demo:
 
-![streamlit_app.png](streamlit_app.png)
+![streamlit_app.png](imgs/streamlit_app.png)
+
 ## 🧰 Tech Stack
 
 - `spaCy` – Text preprocessing
